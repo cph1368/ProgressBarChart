@@ -29,13 +29,22 @@ struct ContentView: View {
                
             }
             
-            VStack(alignment: .leading) {
-                Text("Spending")
-                Text("4,246.83")
+            HStack {
+                VStack(alignment: .leading) {
+                    Text("Spending")
+                    Text("4,246.83")
+                }
+                Spacer()
+                VStack(alignment: .leading) {
+                    Text("Spending")
+                    Text("4,246.83")
+                }
             }
-            .frame(width: 350)
-            .padding()
+           
+            
         }
+        .frame(width: 350)
+        .padding()
     }
 }
 
