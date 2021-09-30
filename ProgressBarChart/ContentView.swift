@@ -12,7 +12,7 @@ struct ContentView: View {
         VStack(alignment: .leading) {
             
            VStack {
-            Text("Ins and Outs")
+            Text("Ins and outs")
                 .font(.headline)
             }
             ZStack {
@@ -38,22 +38,25 @@ struct ContentView: View {
                     Text("Spending")
                         .font(.footnote)
                         .foregroundColor(Color(#colorLiteral(red: 0.2785941958, green: 0.2781485915, blue: 0.2913044393, alpha: 1)))
+                      
                     
                     Text("$4,246.83")
-                        .padding(.bottom)
                         .font(.headline)
+                        .padding(.top,1)
                 }
                 Spacer()
                 VStack(alignment: .trailing) {
                     Text("Income")
                         .font(.footnote)
                         .foregroundColor(Color(#colorLiteral(red: 0.2785941958, green: 0.2781485915, blue: 0.2913044393, alpha: 1)))
+                       
                     
                     Text("$3,687.56")
-                        .padding(.bottom)
                         .font(.headline)
+                        .padding(.top,1)
                 }
             }
+            .padding(.top,10)
            
             
         }
