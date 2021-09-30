@@ -11,6 +11,7 @@ struct ContentView: View {
     
     @State private var leftBar = 200
     @State private var rightBar = 150
+    
     var body: some View {
         VStack(alignment: .leading) {
             
@@ -36,7 +37,7 @@ struct ContentView: View {
                 VStack(alignment: .leading) {
                     Text("Spending")
                         .font(.footnote)
-                        .foregroundColor(Color(#colorLiteral(red: 0.2785941958, green: 0.2781485915, blue: 0.2913044393, alpha: 1)))
+                        .foregroundColor(Color(#colorLiteral(red: 0.4834580421, green: 0.4777960777, blue: 0.4998141527, alpha: 1)))
                     
                     
                     Text("$4,246.83")
@@ -47,7 +48,7 @@ struct ContentView: View {
                 VStack(alignment: .trailing) {
                     Text("Income")
                         .font(.footnote)
-                        .foregroundColor(Color(#colorLiteral(red: 0.2785941958, green: 0.2781485915, blue: 0.2913044393, alpha: 1)))
+                        .foregroundColor(Color(#colorLiteral(red: 0.4834580421, green: 0.4777960777, blue: 0.4998141527, alpha: 1)))
                     
                     
                     Text("$3,687.56")
