@@ -16,22 +16,21 @@ struct ContentView: View {
                 .font(.headline)
             }
             ZStack {
-                Rectangle().frame(width: 360, height: 25)
-                .foregroundColor(Color.white)
+               // Rectangle().frame(width: 360, height: 25)
+              //  .foregroundColor(Color.white)
                 
-                HStack {
+                HStack(spacing: 2) {
 
                     RoundedCornersShape(corners: [.topLeft, .bottomLeft], radius: 15)
                         .fill(Color(#colorLiteral(red: 0.8202568293, green: 0.1505224109, blue: 0.09123057872, alpha: 1)))
                         .frame(width: 200, height: 15)
-                    Spacer()
+                    //Spacer(minLength: 0)
               
                     RoundedCornersShape(corners: [.topRight, .bottomRight], radius: 15)
                         .fill(Color(#colorLiteral(red: 0.1263336241, green: 0.1195754185, blue: 0.3506284952, alpha: 1)))
                         .frame(width: 150, height: 15)
                 }
                 
-               
             }
             
             HStack {
