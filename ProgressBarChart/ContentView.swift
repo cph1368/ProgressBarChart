@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var leftBar = 200
+    @State private var rightBar = 150
     var body: some View {
         VStack(alignment: .leading) {
             
@@ -20,11 +23,11 @@ struct ContentView: View {
                     
                     RoundedCornersShape(corners: [.topLeft, .bottomLeft], radius: 15)
                         .fill(Color(#colorLiteral(red: 0.8202568293, green: 0.1505224109, blue: 0.09123057872, alpha: 1)))
-                        .frame(width: 200, height: 15)
+                        .frame(width: CGFloat(leftBar), height: 15)
                     
                     RoundedCornersShape(corners: [.topRight, .bottomRight], radius: 15)
                         .fill(Color(#colorLiteral(red: 0.1263336241, green: 0.1195754185, blue: 0.3506284952, alpha: 1)))
-                        .frame(width: 150, height: 15)
+                        .frame(width: CGFloat(rightBar), height: 15)
                 }
                 
             }
