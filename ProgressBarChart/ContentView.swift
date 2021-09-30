@@ -10,20 +10,25 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack(alignment: .leading) {
+            
+           VStack {
+            Text("Ins and Outs")
+                .font(.headline)
+            }
             ZStack {
-                Rectangle().frame(width: 300, height: 50)
+                Rectangle().frame(width: 360, height: 25)
                 .foregroundColor(Color.white)
                 
                 HStack {
 
                     RoundedCornersShape(corners: [.topLeft, .bottomLeft], radius: 15)
                         .fill(Color(#colorLiteral(red: 0.8202568293, green: 0.1505224109, blue: 0.09123057872, alpha: 1)))
-                        .frame(width: 200, height: 20)
+                        .frame(width: 200, height: 15)
                     Spacer()
               
                     RoundedCornersShape(corners: [.topRight, .bottomRight], radius: 15)
                         .fill(Color(#colorLiteral(red: 0.1263336241, green: 0.1195754185, blue: 0.3506284952, alpha: 1)))
-                        .frame(width: 150, height: 20)
+                        .frame(width: 150, height: 15)
                 }
                 
                
@@ -32,12 +37,22 @@ struct ContentView: View {
             HStack {
                 VStack(alignment: .leading) {
                     Text("Spending")
-                    Text("4,246.83")
+                        .font(.footnote)
+                        .foregroundColor(Color(#colorLiteral(red: 0.2785941958, green: 0.2781485915, blue: 0.2913044393, alpha: 1)))
+                    
+                    Text("$4,246.83")
+                        .padding(.bottom)
+                        .font(.headline)
                 }
                 Spacer()
-                VStack(alignment: .leading) {
-                    Text("Spending")
-                    Text("4,246.83")
+                VStack(alignment: .trailing) {
+                    Text("Income")
+                        .font(.footnote)
+                        .foregroundColor(Color(#colorLiteral(red: 0.2785941958, green: 0.2781485915, blue: 0.2913044393, alpha: 1)))
+                    
+                    Text("$3,687.56")
+                        .padding(.bottom)
+                        .font(.headline)
                 }
             }
            
@@ -45,6 +60,7 @@ struct ContentView: View {
         }
         .frame(width: 350)
         .padding()
+      
     }
 }
 
